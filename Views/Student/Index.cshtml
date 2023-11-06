@@ -6,6 +6,9 @@
 
 <h1>Students</h1>
 
-@foreach{
-
-}
+<ul>
+    @foreach(var student in ViewData["Students"] as List<Student>)
+	{
+		<li>@student.ID - @student.Name</li>
+	})
+</ul>
